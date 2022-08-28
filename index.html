@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Page Todo</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer ></script>
   </head>
   <body>
     <header class="head">
@@ -12,9 +13,8 @@
 
         <nav class="nav">
           <ul>
-            
-            <li><a href="index.html">Home</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
+            <li><a class="anchor"href="index.html">Home</a></li>
+            <li><a class="anchor"href="signup.html">Sign Up</a></li>
             <li><a>Search</a></li>
             
           </ul>
@@ -25,11 +25,25 @@
         <div class="msg">
           <h2 >Message</h2>
         </div>
-        <form class="form1">
+        <form class="form1" method="post">
           <input class="write" type="input" placeholder="Write Messages" />
-          <input class="btn" type="submit" placeholder="Write" />
+          <input class="btn" type="button" value="Submit"/>
+          
         </form>
+        
       </div>
+      
+ <!-- Todo List -->
+       <div class= "container">
+        <ul class="Todo-Msg" id="TodoMsg">
+       <!--   <li class="todoList" > Hero2 </li>
+          <li class="todoList" > Hero2 </li>
+          <li class="todoList" > Hero1 </li> -->
+        </ul> 
+      </div>
+      
+      
+      
     </header>
   </body>
 </html>
